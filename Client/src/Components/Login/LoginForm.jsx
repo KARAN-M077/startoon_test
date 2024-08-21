@@ -12,7 +12,7 @@ const LoginForm = () => {
 
     const [openSnackbar, setOpenSnackbar] = useState(false);
     const [snackbarMessage, setSnackbarMessage] = useState('');
-    const [snackbarSeverity, setSnackbarSeverity] = useState('success'); // 'success' or 'error'
+    const [snackbarSeverity, setSnackbarSeverity] = useState('success'); 
 
     const navigate = useNavigate();
 
@@ -27,13 +27,13 @@ const LoginForm = () => {
         e.preventDefault();
         try {
             const response = await axios.post('http://localhost:3000/api/login', loginData);
-            sessionStorage.setItem('userData', JSON.stringify(response.data)); // Store user data in session storage
+            sessionStorage.setItem('userData', JSON.stringify(response.data)); 
             setSnackbarMessage('Logged in Successfully');
             setSnackbarSeverity('success');
             setOpenSnackbar(true);
             setTimeout(() => {
-                navigate('/userdata'); // Redirect to Userdata page after showing the snackbar
-            }, 2000); // Delay navigation to allow snackbar to be visible
+                navigate('/userdata');
+            }, 2000); 
         } catch (error) {
             console.error('Error:', error);
             setSnackbarMessage('Wrong Credentials');
@@ -123,7 +123,7 @@ const LoginForm = () => {
                 open={openSnackbar}
                 autoHideDuration={6000}
                 onClose={handleCloseSnackbar}
-                anchorOrigin={{ vertical: 'top', horizontal: 'center' }} // Position at the top center
+                anchorOrigin={{ vertical: 'top', horizontal: 'center' }} 
                 action={
                     <Button color="inherit" onClick={handleCloseSnackbar}>
                         Close

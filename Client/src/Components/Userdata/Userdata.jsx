@@ -11,7 +11,7 @@ const Userdata = () => {
         if (storedUserData) {
             setUserData(JSON.parse(storedUserData));
         } else {
-            navigate('/login'); // Redirect to login if no user data is found
+            navigate('/login'); 
         }
     }, [navigate]);
 
@@ -26,7 +26,7 @@ const Userdata = () => {
                 justifyContent: 'center',
                 alignItems: 'center',
                 height: '100vh',
-                backgroundColor: '#f0f2f5', // Light background color
+                backgroundColor: '#f0f2f5', 
                 padding: '16px',
             }}
         >
@@ -37,8 +37,8 @@ const Userdata = () => {
                     borderRadius: '8px',
                     backgroundColor: 'white',
                     width: '100%',
-                    maxWidth: '600px', // Max width for larger screens
-                    textAlign: 'center', // Center text alignment
+                    maxWidth: '600px', 
+                    textAlign: 'center', 
                 }}
             >
                 <Typography variant="h4" gutterBottom>

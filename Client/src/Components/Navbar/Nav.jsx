@@ -13,8 +13,8 @@ const Nav = () => {
             sx={{
                 backgroundColor: 'white',
                 color: 'black',
-                boxShadow: '0 4px 8px rgba(0, 0, 0, 0.2)', // Custom shadow
-                elevation: 4, // Default elevation can be adjusted if needed
+                boxShadow: '0 4px 8px rgba(0, 0, 0, 0.2)', 
+                elevation: 4,
             }}
         >
             <Toolbar>

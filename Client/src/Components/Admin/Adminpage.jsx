@@ -32,14 +32,14 @@ const Adminpage = () => {
                     boxShadow: '0 0 10px rgba(0, 0, 0, 0.1)',
                     marginTop: '16px',
                     width: '100%',
-                    overflowX: 'auto', // Allow horizontal scroll on small devices
+                    overflowX: 'auto', 
                 }}
             >
                 <Typography 
                     variant="h4" 
                     sx={{ 
                         marginBottom: '16px',
-                        fontSize: { xs: '1.5rem', sm: '2rem', md: '2.5rem' } // Responsive font size
+                        fontSize: { xs: '1.5rem', sm: '2rem', md: '2.5rem' }
                     }}
                 >
                     Dashboard

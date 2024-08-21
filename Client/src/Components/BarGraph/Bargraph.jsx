@@ -22,7 +22,6 @@ const BarGraph = () => {
     }, []);
 
     const processData = (data) => {
-        // Process data to aggregate counts by month
         const countsByMonth = {};
 
         data.forEach(item => {
