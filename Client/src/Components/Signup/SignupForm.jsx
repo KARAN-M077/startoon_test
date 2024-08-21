@@ -27,7 +27,7 @@ const SignupForm = () => {
     const handleSubmit = async (e) => {
         e.preventDefault();
         try {
-            const response = await axios.post('http://localhost:3000/api/signup', formData);
+            const response = await axios.post('https://startoon-test-2.onrender.com/api/signup', formData);
             setSnackbarMessage('Your account has been created. Please login.');
             setSnackbarSeverity('success');
             setOpenSnackbar(true);

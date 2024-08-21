@@ -26,7 +26,7 @@ const LoginForm = () => {
     const handleSubmit = async (e) => {
         e.preventDefault();
         try {
-            const response = await axios.post('http://localhost:3000/api/login', loginData);
+            const response = await axios.post('https://startoon-test-2.onrender.com/api/login', loginData);
             sessionStorage.setItem('userData', JSON.stringify(response.data)); 
             setSnackbarMessage('Logged in Successfully');
             setSnackbarSeverity('success');

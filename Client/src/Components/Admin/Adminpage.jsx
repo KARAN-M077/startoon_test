@@ -9,7 +9,7 @@ const Adminpage = () => {
     useEffect(() => {
         const fetchData = async () => {
             try {
-                const response = await axios.get('http://localhost:3000/api/admin-data');
+                const response = await axios.get('https://startoon-test-2.onrender.com/api/admin-data');
                 setData(response.data);
             } catch (error) {
                 console.error('Error fetching admin data:', error);

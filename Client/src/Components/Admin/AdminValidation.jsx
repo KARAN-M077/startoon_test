@@ -23,7 +23,7 @@ const AdminValidation = () => {
     const handleSubmit = async (e) => {
         e.preventDefault();
         try {
-            const response = await axios.post('http://localhost:3000/api/admin-login', credentials);
+            const response = await axios.post('https://startoon-test-2.onrender.com/api/admin-login', credentials);
             setSnackbarMessage('Welcome Admin');
             setSnackbarSeverity('success');
             setSnackbarOpen(true);

@@ -10,7 +10,7 @@ const BarGraph = () => {
     useEffect(() => {
         const fetchData = async () => {
             try {
-                const response = await axios.get('http://localhost:3000/api/admin-data');
+                const response = await axios.get('https://startoon-test-2.onrender.com/api/admin-data');
                 const processedData = processData(response.data);
                 setData(processedData);
             } catch (error) {
